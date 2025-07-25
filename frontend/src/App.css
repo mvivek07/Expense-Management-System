@@ -1,0 +1,153 @@
+/* Background and global styles */
+body, .App {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Specific headings above balance, income, and expense */
+h2:nth-of-type(1)::before {
+  content: "Your Balance";
+  display: block;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+h3:nth-of-type(1)::before {
+  content: "Income";
+  display: block;
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+h3:nth-of-type(2)::before {
+  content: "Expense";
+  display: block;
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+/* Expense item row */
+.expense-item {
+  background-color: #1c1c1c;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 12px auto;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 5px rgba(255,255,255,0.05);
+}
+
+/* X button */
+.delete-button {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+/* Expense description and amount */
+.expense-description {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.expense-amount {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #2ecc71;
+}
+
+/* Input label */
+label {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Toastify styling */
+.Toastify__toast {
+  font-size: 1rem;
+  border-radius: 8px;
+}
+.Toastify__toast--success {
+  background-color: #2ecc71;
+  color: black;
+}
+.Toastify__toast-container {
+  top: 80px;
+  right: 20px;
+}
+@media (max-width: 768px) {
+  .Toastify__toast-container {
+    top: 60px;
+    right: 10px;
+    left: 10px;
+  }
+}
+.heading {
+    color: black;
+}
+
+.label {
+    color: black;
+}
+.container {
+    color: black; /* Sets text color to black for all child elements */
+    font-family: Arial, sans-serif; /* Optional: improves readability */
+}
+
+.heading {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.label {
+    color: black;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input {
+    color: black;
+    padding: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.button {
+    color: black;
+    background-color: #e0e0e0;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.span-text {
+    color: black;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.link {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
